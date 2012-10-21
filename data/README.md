@@ -30,9 +30,11 @@ Data Sources
 *Obs:* Os dados estão em formato Javascript, não JSON, na verdade é apenas um código JS que é carregado pelo cliente e executado, setando as variáveis necessárias para funcionamento, então, na prática, contêm um JSON.
 
 No arquivo de questões essa variável é setada como:
+
     var aQst = [...
 
 E no arquivo de respostas:
+
     var aGrp = [...
 
 Database Scheme
