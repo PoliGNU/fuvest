@@ -1,5 +1,8 @@
+Data
+====
+
 Data Range
-==========
+----------
 
 ### Ano: 1995-2012
 ### Fase: 1..4
@@ -14,7 +17,7 @@ Data Range
 3. Carreira por Campus(Só nas fases 3 e 4)
 
 Data Sources
-============
+------------
 
 **Questões**: http://www.fuvest.br/vest{ano}/js/qase_quest_{ano}.js
 
@@ -22,34 +25,34 @@ Data Sources
 
 
 Database Scheme
-===============
+---------------
  
-> tbQuestoes
->   id:integer
->   questao:string
->   numresp:integer
->   ano: integer/datetime
+tbQuestoes
+* id:integer
+* questao:string
+* numresp:integer
+* ano: integer/datetime
 
-> tbOpcoes
->   id:integer
->   questao_id: integer
->   opcoes:string
+tbOpcoes
+* id:integer
+* questao_id: integer
+* opcoes:string
 
-> tbGrupos
->   id:integer
->   tipo: integer
->   codigo: string
->   nome: string
->   fase: integer
+tbGrupos
+* id:integer
+* tipo: integer
+* codigo: string
+* nome: string
+* fase: integer
 
-> tbTotais
->   grupo_id: integer
->   questao_id: integer
->   total: integer
+tbTotais
+* grupo_id: integer
+* questao_id: integer
+* total: integer
 
-> tbRespostas
->   id:integer
->   grupo_id: integer
->   questao_id: integer
->   opcao_id: integer
->   quantidade: integer
+tbRespostas
+* id:integer
+* grupo_id: integer
+* questao_id: integer
+* opcao_id: integer
+* quantidade: integer
